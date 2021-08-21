@@ -1,0 +1,82 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timelinestyles.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id = "li">
+    <a href="http://localhost:8000/">Home</a>
+    <a class="active" href="http://localhost:8000/professional/">Profissional</a>
+    <a href="http://localhost:8000/about/">Pessoal</a>
+    <a href="https://www.facebook.com/profile.php?id=100001921725895" target="_blank"><img src="{% static '/media/icone_facebook.png' %}" alt="facebook"/></a>
+    <a href="https://www.linkedin.com/in/f%C3%A1bio-gon%C3%A7alves-de-oliveira-a5a8a9168/" target="_blank"><img src="{% static '/media/icone_linkedin.png' %}" alt="linkedin"/></a>
+    <a href="https://api.whatsapp.com/send?%201=pt_BR&phone=5541987665441" target="_blank"><img src="{% static '/media/icone_whatsapp.png' %}" alt="whatsapp"/></a>
+   </div>
+<div class="timeline">
+  <div class="container left">
+    <i class="icon fa fa-home"></i>
+    <div class="content">
+      <h2>Entrada IFPR</h2>
+      <p>A minha trajetória profissional começou com a entrada no IFPR. Foi lá que tive meu primeiro contato
+      com a área em que atuo hoje e que escolhi como profissão, que é a Engenharia Elétrica. Meu primeiro projeto completo foi desenvolver um alimentador automático para cães e gatos, podendo ser visto nas fotos abaixo. Além disso lá realizei um projeto de automação de um sistema de envase, ilustrado em vídeo abaixo.</p>
+    </div>
+  </div>
+  <div class="container right">
+    <i class="icon fa fa-gift"></i>
+    <div class="content">
+      <h2>Alimentador Automático</h2>
+ 		<img src="{% static '/media/Montagem_final.jpg' %}" alt="Hi!"  />
+ 		<img src="{% static '/media/Montagem_explodida.jpg' %}" alt="Hi!"  />
+ 		<img src="{% static '/media/Montagem_final_1.jpg' %}" alt="Hi!"  />
+
+    </div>
+  </div>
+  <div class="container left">
+    <i class="icon fa fa-user"></i>
+    <div class="content">
+      <h2>Projeto Automação</h2>
+
+      	  	<video preload="none" controls width="100%" height="100%" style="
+    border-radius: 10%;"><source src="{% static '/media/esteira.mp4' %}" type="video/mp4"></video>
+    </div>
+  </div>
+  <div class="container right">
+    <i class="icon fa fa-running"></i>
+    <div class="content">
+      <h2>Estágio UFPR</h2>
+      <p>
+        Minha primeira experiência profissional foi no departamento de matemática da UFPR, sendo assistente do professor
+        Yuan Jinyun, auxiliando-o a organizar a OBMEP-PR. Neste estágio tive a oportunidade de desenvolver a minha comunicação.
+      </p>
+    </div>
+  </div>
+  <div class="container left">
+    <i class="icon fa fa-cog"></i>
+    <div class="content">
+      <h2>DRB Tecnologia</h2>
+      <p>
+        A DRB foi minha primeira experiência dentro da área de desenvolvimento de hardware e firmware. Nela trabalhei com programação C/C++, para PIC18F e PIC16F, ATmega328p e ESP32. ALém disso, realizei trabalhos de solda e montagem de circuitos eletrônicos.
+      </p>
+    </div>
+  </div>
+  <div class="container right">
+    <i class="icon fa fa-running"></i>
+    <div class="content">
+      <h2>Ciência para Todos</h2>
+      <p>
+       	Faço parte do projeto de extensão Ciência para Todos, que trabalha com divulgação ciêntifica. ALém disso, faço parte do grupo Startup Experience, coordenado pelo professor Andre Mariano Bellin, que é voltado ao desenvolvimento de startups.
+      </p>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>

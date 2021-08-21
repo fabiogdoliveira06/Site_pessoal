@@ -1,0 +1,73 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/timelinestyles.css' %}">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id = "li">
+    <a href="http://localhost:8000/">Home</a>
+    <a href="http://localhost:8000/professional/">Profissional</a>
+    <a  class="active" href="http://localhost:8000/about/">Pessoal</a>
+    <a href="https://www.facebook.com/profile.php?id=100001921725895" target="_blank"><img src="{% static '/media/icone_facebook.png' %}" alt="facebook"/></a>
+    <a href="https://www.linkedin.com/in/f%C3%A1bio-gon%C3%A7alves-de-oliveira-a5a8a9168/" target="_blank"><img src="{% static '/media/icone_linkedin.png' %}" alt="linkedin"/></a>
+    <a href="https://api.whatsapp.com/send?%201=pt_BR&phone=5541987665441" target="_blank"><img src="{% static '/media/icone_whatsapp.png' %}" alt="whatsapp"/></a>
+  </div>
+  <div class="timeline">
+    <div class="container left">
+      <i class="icon fa fa-home"></i>
+      <div class="content">
+        <h2>Nascimento</h2>
+        <p>
+          Nasci no dia 6 de setembro de 2000 em Curitiba Paraná. Filho de Rogério Gonçalves de Oliveira e Zélia Maria Kshesek, pais maravilhosos. Tenho 2 irmãos, o Felipe que é 3 anos mais velho e o Vinícius que é 13 anos mais novo, somos muito próximos e sou muito grato por eles.
+        </p>
+    </div>
+    </div>
+    <div class="container right">
+      <i class="icon fa fa-gift"></i>
+      <div class="content">
+        <h2>Infância</h2>
+        <p>
+          Antes de entrar no ensimo médio, passei por 4 escolas. Gostava muito de praticar esportes, tendo feito aulas de natação, futsal, futebol e por fim o esporte que mais pratiquei e gostei o karate. Foram 4 anos, participei de vários campeonatos, ganhei alguns e perdi outros, mas sempre me diverti muito com eles.
+        </p>
+      </div>
+    </div>
+    <div class="container left">
+      <i class="icon fa fa-user"></i>
+      <div class="content">
+        <h2>Ensino médio</h2>
+        <p>
+          No ensino médio passei na prova do IFPR, para cursar técnico em eletrônica. Foi o período mais corrido que já vivi, por conta de ter aula a tarde toda e 2 vezes na semana ter contraturno, acabei saindo do Karate, e minha vida passou a ficar mais focada na escola. Apesar  disso, esse foi um período em que me tornei muito independente e conheci amigos que levo até hoje, incluindo minha noiva.
+        </p>
+      </div>
+    </div>
+    <div class="container right">
+      <i class="icon fa fa-running"></i>
+      <div class="content">
+        <h2>Vestibular</h2>
+        <p>
+          Tive a sorte de passar no vestibular em minha primeira tentativa, mesmo sem ter tanto tempo para me dedicar a um estudo mais aprofundado do mesmo. Escolhi o curso de Engenharia Elétrica com Ênfase em Sistemas Embarcados. Essa escolha se deu por um projeto que realizei no ensino médio, um alimentador automático para cães e gatos. Esse projeto me despertou um gosto muito grande por desenvolvimento, principalmente de firmware, pois adoro programação. 
+        </p>
+      </div>
+    </div>
+  <div class="container left">
+    <i class="icon fa fa-cog"></i>
+    <div class="content">
+      <h2>Faculdade</h2>
+      <p>
+        Esta é a fase da vida que me encontro agora, estou no (pelas minha contas) sétimo período do curso, ao longo desse tempo pude passar por algumas experiências, já tive experiências profissionais (os detalhes estão na aba "Profissional") e atualmente participo de um projeto chamado ciência para todos, o qual é voltado para a divulgação ciêntifica para alunos do ensino médio. Além disso, dentro deste projeto eu participo de um grupo chamado Startup Experience, voltado para o desenvolvimento de uma startup. Por conta desse projeto pude desenvolver muito minhas soft skills, ponto que é meu principal foco atualmente. Devido ao projeto tive que realizar apresentações e trabalhar minha habilidade de liderança, descobri que a área de gestão, principalmente de tecnologia me agrada muito, sendo uma das minhas aspirações profissionais.
+      </p>
+    </div>
+  </div>
+
+</div>
+</div>
+</body>
+</html>

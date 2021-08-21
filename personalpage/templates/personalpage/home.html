@@ -1,0 +1,34 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div id = "li">
+	  <a href="http://localhost:8000/"  class="active">Home</a>
+		<a href="http://localhost:8000/professional/">Profissional</a>
+	  <a href="http://localhost:8000/about/">Pessoal</a>
+	  <a href="https://www.facebook.com/profile.php?id=100001921725895" target="_blank"><img src="{% static '/media/icone_facebook.png' %}" alt="facebook"/></a>
+    <a href="https://www.linkedin.com/in/f%C3%A1bio-gon%C3%A7alves-de-oliveira-a5a8a9168/" target="_blank"><img src="{% static '/media/icone_linkedin.png' %}" alt="linkedin"/></a>
+    <a href="https://api.whatsapp.com/send?%201=pt_BR&phone=5541987665441" target="_blank"><img src="{% static '/media/icone_whatsapp.png' %}" alt="whatsapp"/></a>
+   </div>
+  	<div id="column">
+    	<h1>Fábio Gonçalves de Oliveira</h1>
+    	<h2>Técnico em Eletrônica (IFPR)</h2>
+    	<h2>Estudante de Engenharia Elétrica (UFPR)</h2>
+      <p>Este site foi desenvolvido para mostrar um pouco mais da minha história. Nele possuem duas páginas, a "Profissional", na qual contem meu histórico profissional e a página "Pessoal", na qual contem um resumo da minha vida.</p>
+  	</div>
+  	<div id="column"  class="fadeIn">
+  		  	<img src="{% static '/media/foo.png' %}" alt="Foto do Fábio"/>
+
+  	</div>
+</div>
+</body>
+</html>
